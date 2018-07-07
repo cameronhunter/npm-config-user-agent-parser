@@ -7,7 +7,7 @@
     "type": "git",
     "url": "git@github.com:cameronhunter/npm-config-user-agent-parser.git"
   },
-  "version": "0.0.0",
+  "version": "1.0.0",
   "main": "./src/index.js",
   "bin": "./bin/npm-config-user-agent-parser",
   "files": [

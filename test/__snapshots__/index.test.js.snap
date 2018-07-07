@@ -1,0 +1,58 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Parses npm's process.env.npm_config_user_agent 1`] = `
+Object {
+  "arch": "x64",
+  "node": SemVer {
+    "build": Array [],
+    "loose": undefined,
+    "major": 8,
+    "minor": 9,
+    "patch": 4,
+    "prerelease": Array [],
+    "raw": "8.9.4",
+    "version": "8.9.4",
+  },
+  "npm": SemVer {
+    "build": Array [],
+    "loose": undefined,
+    "major": 6,
+    "minor": 1,
+    "patch": 0,
+    "prerelease": Array [],
+    "raw": "6.1.0",
+    "version": "6.1.0",
+  },
+  "platform": "darwin",
+  "raw": "npm/6.1.0 node/v8.9.4 darwin x64",
+}
+`;
+
+exports[`Parses yarn's process.env.npm_config_user_agent 1`] = `
+Object {
+  "arch": "x64",
+  "node": SemVer {
+    "build": Array [],
+    "loose": undefined,
+    "major": 8,
+    "minor": 9,
+    "patch": 4,
+    "prerelease": Array [],
+    "raw": "8.9.4",
+    "version": "8.9.4",
+  },
+  "npm": null,
+  "platform": "darwin",
+  "raw": "yarn/1.7.0 npm/? node/v8.9.4 darwin x64",
+  "yarn": SemVer {
+    "build": Array [],
+    "loose": undefined,
+    "major": 1,
+    "minor": 7,
+    "patch": 0,
+    "prerelease": Array [],
+    "raw": "1.7.0",
+    "version": "1.7.0",
+  },
+}
+`;

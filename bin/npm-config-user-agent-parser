@@ -1,0 +1,18 @@
+#!/usr/bin/env node
+
+const parser = require('../src');
+
+const args = process.argv.slice(2);
+const useragent = args.length > 0 ? args.join(' ') : process.env.npm_config_user_agent;
+
+if (!useragent) {
+  console.error('Expected process.env.npm_config_user_agent to be defined or an argument provided.');
+  process.exit(1);
+}
+
+const parsed = parser(useragent);
+
+Object.entries(parsed).forEach(([key, value]) => {
+  const stringValue = (value && value.version) || value;
+  value && console.log(`${key}\t${value}`);
+});

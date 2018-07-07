@@ -3,8 +3,12 @@
   "description": "Parser for process.env.npm_config_user_agent",
   "license": "MIT",
   "author": "Cameron Hunter <hello@cameronhunter.co.uk>",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:cameronhunter/npm-config-user-agent-parser.git"
+  },
   "version": "0.0.0",
-  "main": "src/index.js",
+  "main": "./src/index.js",
   "bin": "./bin/npm-config-user-agent-parser",
   "files": [
     "bin",
